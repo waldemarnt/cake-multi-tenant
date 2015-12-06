@@ -1,5 +1,5 @@
 {
-    "name": "waldemarnt/MultiTenant",
+    "name": "waldemarnt/cake-multi-tenant",
     "type": "cakephp-plugin",
     "authors": [
         {
