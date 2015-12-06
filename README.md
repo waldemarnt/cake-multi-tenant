@@ -3,7 +3,11 @@
 The *Multi Tenant* plugin allows an application to be separated in several applications having own routes, sharing the same code and different databases (or the same).
 
 ##Installing
-
+Via composer:
+```sh
+    composer require waldemarnt/cake-multi-tenant
+```
+Or just download the repository here
 
 ##Configuration
 
@@ -12,7 +16,7 @@ The *Multi Tenant* plugin allows an application to be separated in several appli
 Just call the plugin **below the Dispatch** configuration in your boostrap, enable routes and boostrap.
 
 ```sh
-    CakePlugin::load('MultiTenant', array('routes' => true, 'bootstrap' => true));
+    CakePlugin::load('CakeMultiTenant', array('routes' => true, 'bootstrap' => true));
 ```
 ###core.php configuration
 In the core file you will need add the several properties.
