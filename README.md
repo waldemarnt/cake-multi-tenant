@@ -71,7 +71,7 @@ In the database file you just need add the configuration for each tenant like th
 ### AppModel.php configuration
 Just extend your AppModel from MultiTenantAppModel, the MultiTenantAppModel that handles the database switch when the model will be created.
 ```php
-    App::uses('MultiTenantAppModel', 'MultiTenant.Model');
+    App::uses('MultiTenantAppModel', 'CakeMultiTenant.Model');
 
     class AppModel extends MultiTenantAppModel {
     
@@ -83,14 +83,14 @@ Html helper configuration:
 ```php
     
     public $helpers = array(
-        'Html' => array('className' => 'MultiTenant.MultiTenantHtml'),
+        'Html' => array('className' => 'CakeMultiTenant.MultiTenantHtml'),
     );
 ```
 AuthComponent configuration:
 ```php
     public $components = array(
         'Auth' => [
-			'className' => 'MultiTenant.MultiTenantAuth'
+			'className' => 'CakeMultiTenant.MultiTenantAuth'
     );
 ```
 Note: you can add loginAction and LoginRedirect configurations in the Auth component there's no change in the original behavior of the component.

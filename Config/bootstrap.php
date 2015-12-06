@@ -1,7 +1,7 @@
 
 <?php 
 
-App::uses('MultiTenantDispatcher', 'MultiTenant.Lib/Dispatcher');
+App::uses('MultiTenantDispatcher', 'CakeMultiTenant.Lib/Dispatcher');
 
 $currentFilters = Configure::read('Dispatcher.filters');
 $multiTenantFilter['multiTenantFilter'] = array(

@@ -1,6 +1,6 @@
 <?php
 
-App::uses('MultiTenantRouter','MultiTenant.Lib/Routing/Route');
+App::uses('MultiTenantRouter','CakeMultiTenant.Lib/Routing/Route');
 
 
 $plugins = CakePlugin::loaded();

@@ -1,7 +1,7 @@
 <?php
 
 App::uses('DispatcherFilter', 'Routing');
-App::uses('TenantHandler', 'MultiTenant.Lib/Tenant');
+App::uses('TenantHandler', 'CakeMultiTenant.Lib/Tenant');
 
 class MultiTenantDispatcher
 {
@@ -28,7 +28,7 @@ class MultiTenantDispatcher
         if (isset($request['current_tenant'])) {
             $currentTenant = $request['current_tenant'];
         }
-        define('CURRENT_TENANT', $currentTenant);
+
         $event->data['request']['current_tenant'] = $currentTenant;
 
         TenantHandler::setActiveTenant($currentTenant);
