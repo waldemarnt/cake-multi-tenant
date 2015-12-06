@@ -1,0 +1,13 @@
+{
+    "name": "waldemarnt/MultiTenant",
+    "type": "cakephp-plugin",
+    "authors": [
+        {
+            "name": "Waldemar Neto",
+            "email": "waldemarnt@gmail.com"
+        }
+    ],
+    "require": {
+        "composer/installers": "*"
+    }
+}
