@@ -21,7 +21,7 @@ class MultiTenantDispatcher
         $request = $event->data['request'];
         $currentTenant = Configure::read('Config.current_tenant');
         $currentTenantConfig = Configure::read('Config.multi_tenant_config');
-        if(!isset($currentTenantConfig[$request['current_tenant']]['connection_name'])) {
+        if (!isset($currentTenantConfig[$request['current_tenant']]['connection_name'])) {
             throw new InvalidArgumentException("URL inválida, {$request['current_tenant']} não foi encontrado.");
         }
 
