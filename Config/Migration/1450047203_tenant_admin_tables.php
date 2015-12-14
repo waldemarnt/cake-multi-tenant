@@ -1,6 +1,6 @@
 <?php
-class TenantAdminTables extends CakeMigration {
-
+class TenantAdminTables extends CakeMigration
+{
     /**
      * Migration description
      *
@@ -56,7 +56,8 @@ class TenantAdminTables extends CakeMigration {
      * @param string $direction Direction of migration process (up or down)
      * @return bool Should process continue
      */
-    public function before($direction) {
+    public function before($direction)
+    {
         return true;
     }
 
@@ -66,7 +67,8 @@ class TenantAdminTables extends CakeMigration {
      * @param string $direction Direction of migration process (up or down)
      * @return bool Should process continue
      */
-    public function after($direction) {
+    public function after($direction)
+    {
         return true;
     }
 }
